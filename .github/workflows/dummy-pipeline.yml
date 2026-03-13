@@ -1,0 +1,9 @@
+name: Port Demo Hello World Pipeline
+on: [push, workflow_dispatch] # Runs on every push or manual trigger
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet the user
+        run: echo "Hello, world! This is my Port Demo pipeline."
